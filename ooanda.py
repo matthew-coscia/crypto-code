@@ -4,12 +4,12 @@ import pandas as pd
 import http.client
 import numpy as np
 import math
-API_KEY = "ddd87bd5e3929fab6a5ca297f84b8272-e12925686adac7bc181cd7ab5206f4eb"
+API_KEY = ""
 link = "https://api-fxtrade.oanda.com"
 
 def main():
     header = {
-        "Authorization": "Bearer ddd87bd5e3929fab6a5ca297f84b8272-e12925686adac7bc181cd7ab5206f4eb"
+        "Authorization": "Bearer "
         }
     conn = http.client.HTTPSConnection('api-fxtrade.oanda.com')
     method = "GET"
@@ -26,7 +26,7 @@ def find_orderBook(instrument):
     instrument = str(instrument)
     timestamp = str(int(time.time()))
     header = {
-        "Authorization": "Bearer ddd87bd5e3929fab6a5ca297f84b8272-e12925686adac7bc181cd7ab5206f4eb",
+        "Authorization": "",
         "Accept-Datetime-Format": "UNIX"
         }
     conn = http.client.HTTPSConnection('api-fxtrade.oanda.com')
